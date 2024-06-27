@@ -5,6 +5,8 @@
 
 cd darknet_yolov4_cpu
 
+sh download_weights.sh
+
 make
 
 
