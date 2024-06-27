@@ -8,6 +8,15 @@ cd darknet_yolov4_cpu
 make
 
 
+## you can run detector test using image file
+
+./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights data/bicycle_road.jpg -i 0 -thresh 0.1
+
+(you can see the result at the predictions.jpg)
+
+![predictions_bicycle_road.jpg sample](image.png)
+
+
 ## you can run detector demo using video file
 
 ./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights data/road_traffic.mp4 -thresh 0.25
@@ -19,15 +28,6 @@ make
 (or you can adjust threshold smaller one like 0.1 : more performance required)
 
 ![demo road_traffic.mp4 sample capture](image-2.png)
-
-
-## you can run detector test using image file
-
-./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights data/bicycle_road.jpg -i 0 -thresh 0.1
-
-(you can see the result at the predictions.jpg)
-
-![predictions_bicycle_road.jpg sample](image.png)
 
 
 Thank you so much!
