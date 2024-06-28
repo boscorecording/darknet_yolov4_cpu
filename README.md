@@ -36,7 +36,11 @@ make
 
 ./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights -i 0 -thresh 0.25
 
+press 'ctrl+c' to quit
+
 (if use usb webcam, '1' or corresponding number instead of '0'. 0 means that use integrated webcam)
+
+![demo webcam real-time](image-1.png)
 
 Thank you so much!
 
