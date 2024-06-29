@@ -3,6 +3,10 @@
 
 ## Initiation
 
+sudo apt install libopencv-dev
+(if opencv is not installed yet)
+sudo apt update
+
 cd darknet_yolov4_cpu
 
 sh download_weights.sh
