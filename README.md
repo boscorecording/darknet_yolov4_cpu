@@ -17,7 +17,11 @@ make
 
 ## you can run detector test using image file
 
+<command>
+
 ./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights data/bicycle_road.jpg -i 0 -thresh 0.1
+
+you can see the several image samples in data folder, and easily modify command to replace the name of image you want to run.
 
 (you can see the result at the predictions.jpg)
 
@@ -26,7 +30,11 @@ make
 
 ## you can run detector demo using video file
 
+<command>
+
 ./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights data/road_traffic.mp4 -thresh 0.25
+
+you can see the several video samples in data folder, and easily modify command to replace the name of video you want to run.
 
 (If your CPU is good enough, you can choose yolov4.cfg and yolov4.weights instead of yolov4-tiny)
 
